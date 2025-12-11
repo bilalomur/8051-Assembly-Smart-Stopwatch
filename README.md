@@ -9,7 +9,6 @@ This project is a precision digital stopwatch developed in **8051 Assembly Langu
 *   **Smart Buzzing:** Non-blocking sound generation using frequency toggling inside the ISR.
 *   **Multiplexed Display:** Drives a 6-digit 7-segment display using dynamic scanning (`RL` instruction logic).
 *   **Input Handling:** Features a robust **software debouncing** algorithm and "One-Shot" state machine to prevent button bouncing.
-
 ## Technical Details
 *   **Language:** Assembly (ASM51)
 *   **Hardware Target:** 8051 Microcontroller (DSM-51 Kit)
@@ -22,6 +21,10 @@ This project is a precision digital stopwatch developed in **8051 Assembly Langu
 *   **Key 4:** Cursor DOWN (Decreases Alarm Minute)
 
 ## How it Works
-The system utilizes a dual-layer architecture:
+The system utilize
+
+https://github.com/user-attachments/assets/6de3cbbc-e20e-446a-afc0-5a2e614da189
+
+s a dual-layer architecture:
 1.  **Main Loop:** Handles the UI, including scanning the 7-segment display and processing user button inputs.
 2.  **Timer Interrupt (ISR):** Runs in the background to count time and toggle the buzzer pin, ensuring the display never flickers even while the alarm is ringing.
