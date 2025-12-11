@@ -21,10 +21,10 @@ This project is a precision digital stopwatch developed in **8051 Assembly Langu
 *   **Key 4:** Cursor DOWN (Decreases Alarm Minute)
 
 ## How it Works
-The system utilize
+
 
 https://github.com/user-attachments/assets/6de3cbbc-e20e-446a-afc0-5a2e614da189
 
-s a dual-layer architecture:
+The system utilizes a dual-layer architecture:
 1.  **Main Loop:** Handles the UI, including scanning the 7-segment display and processing user button inputs.
 2.  **Timer Interrupt (ISR):** Runs in the background to count time and toggle the buzzer pin, ensuring the display never flickers even while the alarm is ringing.
